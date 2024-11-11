@@ -1,0 +1,396 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+    background-image: url("../img/background.jpg");
+
+}
+
+html *{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.header{
+    background-color: #333;
+    height: 90px;
+    color: white;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.header img{
+    height: 50px;
+}
+
+.header input[type=button], input[type=submit]{
+    color: #ddd;
+    background-color: #444;
+    border: 1px solid #666;
+    transition: 0.5s;
+    height: 40px;
+    width: 100px;
+    font-size: 14px;
+}
+
+input{
+    border: none;
+}
+
+.header input[type=button]:hover, input[type=submit]:hover{
+    color:#00c6ff;
+    background-color: #444;
+    border: 1px solid #00c6ff;
+    transition: background-color 0.3s, border 0.3s;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.after-header{
+    margin-bottom: 20px;
+    background-color: #202020;
+    padding: 10px;
+}
+
+.footer{
+    background-color: #202020;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.login_nav{
+    float: right;
+    margin-top: 6px;
+}
+
+.login_nav img{
+    height: 35px;
+    color: white;
+}
+
+.login_nav a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.login_nav a:hover {
+    color: #ff6b6b;
+}
+
+.login_nav input[type="text"], 
+.login_nav input[type="password"] {
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 8px 12px;
+    color: #ddd;
+    background-color: #222;
+    width: 200px;
+}
+
+.login_nav input[type=text]:focus, input[type=password]:focus{
+    outline: none;
+    border-color: #00c6ff;
+    box-shadow: 0 0 5px rgba(0, 198, 255, 0.5);
+}
+
+.login_nav input[type=text]::placeholder, input[type=password]::placeholder{
+    color: #ccc;
+}
+
+
+.container{
+    padding: 0 !important;
+}
+
+.box{
+    padding: 15px;
+    transition: transform 0.3s ease;
+    background-color: #444;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    
+}
+
+.box .pprice, .box .pname{
+    transition: 0.5s ;
+    
+
+}
+
+.box .pname{
+    font-weight: bold;
+    color: white
+}
+
+.box img{
+    width: 100%;
+    margin-bottom: 10px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.box:hover{
+    cursor: pointer;
+}
+
+.box:hover img{
+    transform: scale(1.05);
+    border: 3px solid rgb(72, 255, 255);
+}
+
+.box:hover .pname{
+    color: red;
+}
+
+.box:hover .pprice{
+    color: white;
+}
+
+.box a{
+    text-decoration: none;
+    color: white;
+}
+
+.box a:hover{
+    text-decoration: none;
+}
+
+h2{
+
+    width: 45px;
+    height: 40px;
+    position: relative;
+    background: #202020;
+    color:  white;
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 0px !important;
+    background-color:  rgb(91, 91, 248);
+}
+
+h2 img{
+    height: 40px;
+    margin-right: 5px;
+}
+
+h2:hover{
+    width: 300px;
+    font-size: 20px !important;
+}
+
+h2:before {
+    content: "";
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid rgb(91, 91, 248);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    overflow: unset;
+}
+
+.col-xs-10, .col-sm-10, .col-md-10, .col-lg-10{
+    padding: 0 !important;
+}
+
+.sidebar a{
+    text-decoration: none;
+    color: white;
+}
+
+.sidebar a:hover{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.sidebar dt{
+    color: rgb(91, 91, 248);
+    font-size: 20px;
+}
+
+.sidebar a:hover{
+    color: red;
+}
+
+.chitietright, .mota{
+    color: white;
+}
+
+.chitietright .data, .factory{
+    color: wheat;
+}
+
+.chitietright .name{
+    font-size: 30px;
+    color: rgb(161, 67, 216);
+}
+
+.chitietright .price{
+    color: red;
+}
+
+.chitietleft img{
+    float: right;
+    border-radius: 5px;
+    transition: 0.5s;
+    width: 300px;
+    border: none;
+}
+
+.chitietleft img:hover{
+    transform: scale(1.1);
+    border: 3px solid rgb(72, 255, 255);
+}
+
+h3{
+    color: white;
+}
+
+.frm-dangki{
+    text-align: center;
+    color: wheat;
+    width: 400px;
+    height: 600px;
+}
+
+.frm-dangki .label{
+    float: left;
+}
+
+.frm-dangki input{
+    float: right;
+    display: inline;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.frm-dangki .err{
+    color: red;
+    float: right;
+    font-size: 15px;
+}
+
+.group{
+    height: 20px;
+}
+
+.quanlygiohang{
+    color: white;
+}
+
+.quanlygiohang table{
+    border: 1px solid white;
+    padding: 10px !important;
+}
+
+.quanlygiohang tr{
+    color: violet;
+}
+
+.quanlygiohang td{
+    color: white;
+}
+
+.quanlygiohang form{
+    padding: 10px;
+}
+
+.quanlygiohang input{
+    border-radius: 5px;
+    padding-left: 7px;
+}
+
+th, td{
+    padding: 10px;
+}
+
+.pprice{
+    color: rgb(233, 70, 70);
+    margin: 5px 0px;
+}
+
+table{
+    width: 100%;
+}
+
+.error-message {
+    color: white; /* Thay đổi màu chữ thành trắng */
+    background-color: red; /* Bạn có thể thêm màu nền để nổi bật thông báo */
+    padding: 10px; /* Thêm khoảng cách xung quanh chữ */
+    border-radius: 5px; /* Bo góc */
+}
+
+footer {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #ddd;
+}
+
+footer .h1-footer {
+    color: #333;
+    margin-bottom: 20px;
+}
+#contactForm-footer {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+button[type="submit"] {
+    background-color: #00c6ff;;
+    color: #fff;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+button[type="submit"]:hover {
+    background-color: #0099cc;
+    transition: 0.3s ease;
+}
+
+.input-footer{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    
+}
+
+footer p {
+    color: #4CAF50;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.footer-people{
+    padding: 10px;
+    margin: auto;
+}
+
+.h1-footer{
+    color:black;
+    font-weight: bold;
+} 
